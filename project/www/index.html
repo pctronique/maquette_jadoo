@@ -5,8 +5,9 @@
     <link rel="icon" href="favicon.ico" />
     <link rel="stylesheet" href="css/fonts.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style_tablette_mobile.css" />
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
   </head>
 
   <body>
@@ -55,19 +56,19 @@
     <section id="section_plat">
       <div id="section_plat_decouvrir">Découvrez</div>
       <h3>Les nouveautés Jadoo</h3>
-      <figure class="plat_no_img_filet">
+      <figure class="plat_no_img_filet" id="plat_1">
         <article class="plat">
           <img src="imgs/plat_1.png" alt="plat 1" />
           <div>Boulettes de poulet au gingembre sauce sucrée salée "Tsukuné"</div>
         </article>
       </figure>
-      <figure class="plat_no_img_filet">
+      <figure class="plat_no_img_filet" id="plat_2">
         <article class="plat">
           <img src="imgs/plat_2.png" alt="plat 2" />
           <div>Nouilles japonaises chaudes à base de farine de blé "Udon"</div>
         </article>
       </figure>
-      <figure class="plat_img_filet">
+      <figure class="plat_img_filet" id="plat_3">
         <article class="plat">
           <img src="imgs/plat_3.png" alt="plat 3" />
           <div>Échine de porc panée à la japonaise "Tonkatsu-Teishoku"</div>
@@ -79,9 +80,11 @@
         <img class="decoration_rose" src="imgs/decoration_rose.svg" alt="decoration rose" />
         <article class="maki">
           <img src="imgs/maki_1.png" />
-          <div class="maki_title">California Tobiko</div>
+          <figcaption>
+            <div class="maki_title">California Tobiko</div>
 
-          <div>Saumon, thon, mayonnaise</div>
+            <div class="maki_text">Saumon, thon, mayonnaise</div>
+          </figcaption>
         </article>
       </figure>
 
@@ -89,9 +92,11 @@
         <img class="decoration_rose" src="imgs/decoration_rose.svg" alt="decoration rose" />
         <article class="maki">
           <img src="imgs/maki_2.png" />
-          <div class="maki_title">California Rolls</div>
+          <figcaption>
+            <div class="maki_title">California Rolls</div>
 
-          <div>Saumon, avocat et mayonnaise</div>
+            <div class="maki_text">Saumon, avocat et mayonnaise</div>
+          </figcaption>
         </article>
       </figure>
 
@@ -99,9 +104,12 @@
         <img class="decoration_rose" src="imgs/decoration_rose.svg" alt="decoration rose" />
         <article class="maki">
           <img src="imgs/maki_3.png" />
-          <div class="maki_title">Ebi</div>
+          
+          <figcaption>
+            <div class="maki_title">Ebi</div>
 
-          <div>Crevette, avocat, menthe, coriandre</div>
+            <div class="maki_text">Crevette, avocat, menthe, coriandre</div>
+          </figcaption>
         </article>
       </figure>
 
@@ -109,9 +117,11 @@
         <img class="decoration_rose" src="imgs/decoration_rose.svg" alt="decoration rose" />
         <article class="maki">
           <img src="imgs/maki_4.png" />
-          <div class="maki_title">Ikura Rolls</div>
+          <figcaption>
+            <div class="maki_title">Ikura Rolls</div>
 
-          <div>Oeufs de saumon</div>
+            <div class="maki_text">Oeufs de saumon</div>
+        </figcaption>
         </article>
       </figure>
 
@@ -146,12 +156,12 @@
 
     <!-- contient la section images -->
     <img id="img_chef" src="imgs/illustration_chef.jpg" />
-    <figure id="section_images">
+    <section id="section_images">
       <img src="imgs/wrapper_illustration_1.jpg" /><img
         id="section_image_right"
         src="imgs/wrapper_illustration_2.jpg"
       />
-    </figure>
+    </section>
 
     <!-- contient la section commande -->
     <section id="section_commande">
@@ -162,32 +172,34 @@
         Jadoo
       </p>
 
-      <article id="section_commande_first_article">
-        <img class="lien_livraison" src="imgs/logo_uberEats.png" />
-        <p>
-          <span class="section_commande_article_title">UberEats</span><br />
+      <div>
+        <article id="section_commande_first_article">
+          <img class="lien_livraison" src="imgs/logo_uberEats.png" />
+          <p>
+            <span class="section_commande_article_title">UberEats</span><br />
 
-          Commandez tous vos plats depuis UberEats
-        </p>
-      </article>
+            Commandez tous vos plats depuis UberEats
+          </p>
+        </article>
 
-      <article>
-        <img class="lien_livraison" src="imgs/logo_jadoo_1.svg" />
-        <p>
-          <span class="section_commande_article_title">Jadoo.fr</span><br />
+        <article>
+          <img class="lien_livraison" src="imgs/logo_jadoo_1.svg" />
+          <p>
+            <span class="section_commande_article_title">Jadoo.fr</span><br />
 
-          Ou commandez en ligne sur le site officiel de Jadoo
-        </p>
-      </article>
+            Ou commandez en ligne sur le site officiel de Jadoo
+          </p>
+        </article>
 
-      <article>
-        <img class="lien_livraison" src="imgs/logo_transport.png" />
-        <p>
-          <span class="section_commande_article_title">Livraison ultra rapide</span><br />
+        <article>
+          <img class="lien_livraison" src="imgs/logo_transport.png" />
+          <p>
+            <span class="section_commande_article_title">Livraison ultra rapide</span><br />
 
-          Soyez livré en 20 minutes maximum
-        </p>
-      </article>
+            Soyez livré en 20 minutes maximum
+          </p>
+        </article>
+      </div>
       <button class="button_orange" href="#">Découvrir la carte</button>
     </section>
 
@@ -200,18 +212,18 @@
         pour réserver au restaurant
       </p>
       <br />
-      <div id="form_contact">
+      <figure id="form_contact">
         <form>
           <p id="form_title">Formulaire de contact</p>
           <p>
             Remplissez le formulaire ci-dessous<br />
             pour nous contacter
           </p>
-          <div class="user_name">
+          <article class="user_name">
             <label>Nom</label>
             <input type="text" id="name" name="user_name" placeholder="Nom" />
-          </div>
-          <div class="user_name">
+          </article>
+          <article class="user_name">
             <label>Prénom</label>
             <input
               type="text"
@@ -219,7 +231,7 @@
               name="user_first_name"
               placeholder="Prénom"
             />
-          </div>
+          </article>
           <label>Adresse e-mail</label>
           <input
             type="email"
@@ -234,16 +246,16 @@
             name="user_text"
             placeholder="Votre message/demande de réservation"
           />
-          <div class="text_center">
+          <article class="text_center">
             <button class="button_bleu">
               <img src="imgs/bouton_formulaire_coche.svg" />&nbsp;&nbsp;Envoyer
             </button>
-          </div>
+          </article>
         </form>
-        <div id="form_image">
+        <article id="form_image">
           <img src="imgs/illustration_formulaire.jpg" />
-        </div>
-      </div>
+        </article>
+      </figure>
     </section>
     <!-- contient le pied de la page -->
     <footer>
