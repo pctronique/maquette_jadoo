@@ -52,22 +52,22 @@
   }
   
   @keyframes animation_plat_2 {
-  29% {
-    transform: translate(100%);
-    opacity: 0;
-  }
-  32% {
-    transform: translate(0%);
-    opacity: 1;
-  }
-  58% {
-    transform: translate(0%);
-    opacity: 1;
-  }
-  61% {
-    transform: translate(-100%);
-    opacity: 0;
-  }
+    29% {
+      transform: translate(100%);
+      opacity: 0;
+    }
+    32% {
+      transform: translate(0%);
+      opacity: 1;
+    }
+    58% {
+      transform: translate(0%);
+      opacity: 1;
+    }
+    61% {
+      transform: translate(-100%);
+      opacity: 0;
+    }
   }
   
   @keyframes animation_plat_3 {

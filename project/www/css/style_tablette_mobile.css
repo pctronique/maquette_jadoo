@@ -1,6 +1,18 @@
 /************************************/
 /** version entre 1024px et 1207px **/
 /************************************/
+@media screen and (max-width: 1600px) {
+  /*----------------*/
+  /** section chef **/
+  #section_chef:before {
+    background-position: center;
+  }
+}
+
+
+/************************************/
+/** version entre 1024px et 1207px **/
+/************************************/
 @media screen and (min-width: 1024px) and (max-width: 1207px) {
   /*--------------*/
   /** formulaire **/
@@ -10,21 +22,8 @@
 
   /*----------*/
   /** footer **/
-  .block_footer {
-    text-align: center;
-  }
-
-  .foot_center {
-    margin-right: unset;
-    margin-left: 18%;
-  }
-
-  #logo_foot_text {
-    text-align: center;
-  }
-
-  footer ul {
-    text-align: left;
+  #footer_contenu {
+    width: 90%;
   }
 }
 
@@ -88,21 +87,8 @@
 
   /*----------*/
   /** footer **/
-  .block_footer {
-    text-align: center;
-  }
-
-  .foot_center {
-    margin-right: unset;
-    margin-left: 18%;
-  }
-
-  #logo_foot_text {
-    text-align: center;
-  }
-
-  footer ul {
-    text-align: left;
+  #footer_contenu {
+    width: 90%;
   }
 }
 
@@ -182,17 +168,6 @@
 
   #section_contact_title {
     font-size: 40px;
-  }
-
-  /*----------*/
-  /** footer **/
-  footer {
-    padding-left: 60px;
-    padding-right: 60px;
-  }
-
-  .foot_center {
-    margin-left: 9%;
   }
 }
 
@@ -287,10 +262,11 @@
   /*----------------*/
   /** section plat **/
   #section_plat {
-    background-image: none;
+    /*background-image: none;*/
     overflow: hidden;
     padding: unset;
     text-align: center;
+    background-position-x: -400px;
   }
 
   #section_plat h2 {
