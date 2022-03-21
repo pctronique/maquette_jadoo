@@ -1,136 +1,212 @@
+<?xml version="5.0" encoding="UTF-8" ?>
 <!DOCTYPE html>
 <html>
   <head>
     <title>Jadoo : un voyage culinaire gourmet et gourmand</title>
     <link rel="icon" href="favicon.ico" />
     <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/animation.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style_tablette_mobile.css" />
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=yes"
+    />
   </head>
 
   <body>
     <!-- contient le menu de la page -->
     <header>
       <div id="head_logo">
-        <img id="head_logo_01" src="imgs/logo_jadoo_1.svg" />
+        <img
+          id="head_logo_01"
+          src="imgs/logo_jadoo_1.svg"
+          alt="logo maki de jadoo"
+        />
         &nbsp;
-        <img id="head_logo_02" src="imgs/logo_jadoo_2.svg" />
+        <img
+          id="head_logo_02"
+          src="imgs/logo_jadoo_2.svg"
+          alt="logo du nom jadoo"
+        />
       </div>
-      <img id="menu_mobile" src="imgs/burger_icon.svg" alt="bouton menu" />
-      <nav>
-        <ul id="head_right">
-          <li>
-            <a href="#">Les nouveautés</a>
-          </li>
-          <li>
-            <a href="#">Découvrir</a>
-          </li>
-          <li>
-            <a href="#">Commander</a>
-          </li>
-          <li>
-            <a href="mailto:moi@ttt.ft">Contactez-nous</a>
-          </li>
-        </ul>
-      </nav>
+      <div id="menu_all">
+        <img id="menu_mobile" src="imgs/burger_icon.svg" alt="bouton menu" />
+        <nav>
+          <ul id="head_right">
+            <li>
+              <a href="#">Les nouveautés</a>
+            </li>
+            <li>
+              <a href="#">Découvrir</a>
+            </li>
+            <li>
+              <a href="#">Commander</a>
+            </li>
+            <li>
+              <a href="#">Contactez-nous</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <!-- contient la presentation -->
     <section id="section_presentation">
       <article>
-        <h2>UN VOYAGE CULINAIRE GOURMET ET GOURMAND.</h2>
-        <p class="section_title">
-          Bienvenue au restaurant <span class="souligne-rouge">Jadoo</span>
-        </p>
+        <h3>UN VOYAGE CULINAIRE GOURMET ET GOURMAND.</h3>
+        <h1 class="section_title">
+          Bienvenue<br />
+          au restaurant <span class="souligne-rouge">Jadoo</span>
+        </h1>
         <p class="section_message">
           Jadoo vous accueille dans son ambiance zen et épurée, idéale pour
           découvrir ou redécouvrir la cuisine gastronomique du Chef Junichi
           IIDA.
         </p>
-        <button class="button_orange" href="#">Découvrir la carte</button>
+        <button id="button_presentation" class="button_orange" href="#">
+          Découvrir la carte
+        </button>
       </article>
     </section>
 
     <section id="section_plat">
       <div id="section_plat_decouvrir">Découvrez</div>
-      <h3>Les nouveautés Jadoo</h3>
-      <figure class="plat_no_img_filet">
-        <article class="plat">
-          <img src="imgs/plat_1.png" alt="plat 1" />
-          <div>Boulettes de poulet au gingembre sauce sucrée salée "Tsukuné"</div>
-        </article>
-      </figure>
-      <figure class="plat_no_img_filet">
-        <article class="plat">
-          <img src="imgs/plat_2.png" alt="plat 2" />
-          <div>Nouilles japonaises chaudes à base de farine de blé "Udon"</div>
-        </article>
-      </figure>
-      <figure class="plat_img_filet">
-        <article class="plat">
-          <img src="imgs/plat_3.png" alt="plat 3" />
-          <div>Échine de porc panée à la japonaise "Tonkatsu-Teishoku"</div>
-        </article>
-      </figure>
-      <br /><br /><br />
+      <h2>Les nouveautés Jadoo</h2>
+      <div id="plats">
+        <figure class="plat_no_img_filet" id="plat_1">
+          <article class="plat">
+            <img
+              src="imgs/plat_1.png"
+              alt="photo du plat des boulettes de poulet"
+            />
+            <p class="plat_text">
+              Boulettes de poulet au gingembre sauce sucrée salée "Tsukuné"
+            </p>
+          </article>
+        </figure>
+        <figure class="plat_no_img_filet" id="plat_2">
+          <article class="plat">
+            <img
+              src="imgs/plat_2.png"
+              alt="photo du plat des nouilles japonaises"
+            />
+            <p>Nouilles japonaises chaudes à base de farine de blé "Udon"</p>
+          </article>
+        </figure>
+        <figure class="plat_img_filet" id="plat_3">
+          <article class="plat">
+            <img
+              src="imgs/plat_3.png"
+              alt="photo du plat d'échine de porc panée'"
+            />
+            <p>Échine de porc panée à la japonaise "Tonkatsu-Teishoku"</p>
+          </article>
+        </figure>
+      </div>
 
-      <figure class="maki_div">
-        <img class="decoration_rose" src="imgs/decoration_rose.svg" alt="decoration rose" />
-        <article class="maki">
-          <img src="imgs/maki_1.png" />
-          <div class="maki_title">California Tobiko</div>
+      <div id="makis">
+        <figure class="maki_figure">
+          <img
+            class="decoration_rose"
+            src="imgs/decoration_rose.svg"
+            alt="décoration d'une animation d'un carré rose"
+          />
+          <article class="maki">
+            <img
+              src="imgs/maki_1.png"
+              alt="photo du plat maki de California Tobiko"
+            />
+            <p>
+              <span class="maki_title">California Tobiko</span><br />
 
-          <div>Saumon, thon, mayonnaise</div>
-        </article>
-      </figure>
+              <span class="maki_text">Saumon, thon, mayonnaise</span>
+            </p>
+          </article>
+        </figure>
 
-      <figure class="maki_div">
-        <img class="decoration_rose" src="imgs/decoration_rose.svg" alt="decoration rose" />
-        <article class="maki">
-          <img src="imgs/maki_2.png" />
-          <div class="maki_title">California Rolls</div>
+        <figure class="maki_figure">
+          <img
+            class="decoration_rose"
+            src="imgs/decoration_rose.svg"
+            alt="décoration d'une animation d'un carré rose"
+          />
+          <article class="maki">
+            <img
+              src="imgs/maki_2.png"
+              alt="photo du plat maki de California Rolls"
+            />
+            <p>
+              <span class="maki_title">California Rolls</span><br />
 
-          <div>Saumon, avocat et mayonnaise</div>
-        </article>
-      </figure>
+              <span class="maki_text">Saumon, avocat et mayonnaise</span>
+            </p>
+          </article>
+        </figure>
 
-      <figure class="maki_div">
-        <img class="decoration_rose" src="imgs/decoration_rose.svg" alt="decoration rose" />
-        <article class="maki">
-          <img src="imgs/maki_3.png" />
-          <div class="maki_title">Ebi</div>
+        <figure class="maki_figure">
+          <img
+            class="decoration_rose"
+            src="imgs/decoration_rose.svg"
+            alt="décoration d'une animation d'un carré rose"
+          />
+          <article class="maki">
+            <img src="imgs/maki_3.png" alt="photo du plat maki Ebi" />
+            <p>
+              <span class="maki_title">Ebi</span><br />
 
-          <div>Crevette, avocat, menthe, coriandre</div>
-        </article>
-      </figure>
+              <span class="maki_text">Crevette, avocat, menthe, coriandre</span>
+            </p>
+          </article>
+        </figure>
 
-      <figure class="maki_div">
-        <img class="decoration_rose" src="imgs/decoration_rose.svg" alt="decoration rose" />
-        <article class="maki">
-          <img src="imgs/maki_4.png" />
-          <div class="maki_title">Ikura Rolls</div>
+        <figure class="maki_figure">
+          <img
+            class="decoration_rose"
+            src="imgs/decoration_rose.svg"
+            alt="décoration d'une animation d'un carré rose"
+          />
+          <article class="maki">
+            <img src="imgs/maki_4.png" alt="photo du plat maki d'Ikura Rolls" />
+            <p>
+              <span class="maki_title">Ikura Rolls</span><br />
 
-          <div>Oeufs de saumon</div>
-        </article>
-      </figure>
-
+              <span class="maki_text">Oeufs de saumon</span>
+            </p>
+          </article>
+        </figure>
+      </div>
       <br />
-      <button class="button_orange" href="#">Découvrir la carte</button>
+      <button id="button_section_plat" class="button_orange" href="#">
+        Découvrir la carte
+      </button>
     </section>
 
     <!-- contient la section chef -->
     <section id="section_chef">
+      <video
+        width="720"
+        height="405"
+        controls
+        poster="imgs/visu_video.jpg"
+        alt="video du chef"
+      >
+        <source src="videos/video_pour_jadoo.mkv" type="video/mp4" />
+      </video>
       <article class="video">
-        <img class="img_video" src="imgs/visu_video.jpg" />
-        <a
-          href="#"
-          class="button_video_play"
-          alt="video du chef"
-          title="lire la vidéo"
-        >
-          <img class="button_video" src="imgs/button_play.svg" />
-      </a>
+        <img
+          class="img_video"
+          src="imgs/visu_video.jpg"
+          alt="image de la vidéo"
+        />
+        <a href="#" class="button_video_play" title="lire la vidéo">
+          <img
+            class="button_video"
+            src="imgs/button_play.svg"
+            alt="image du bouton de lecture de la vidéo"
+          />
+        </a>
       </article>
       <p class="section_title">
         <span class="souligne-rouge">Un voyage</span> gastronomique entre le
@@ -145,13 +221,21 @@
     </section>
 
     <!-- contient la section images -->
-    <img id="img_chef" src="imgs/illustration_chef.jpg" />
-    <figure id="section_images">
-      <img src="imgs/wrapper_illustration_1.jpg" /><img
+    <img
+      id="img_chef"
+      src="imgs/illustration_chef.jpg"
+      alt="photo d'un chef de cuisine"
+    />
+    <section id="section_images">
+      <img
+        src="imgs/wrapper_illustration_1.jpg"
+        alt="plat avec des baguettes chinoises"
+      /><img
         id="section_image_right"
         src="imgs/wrapper_illustration_2.jpg"
+        alt="illustration d'une pièce à manger chinoise"
       />
-    </figure>
+    </section>
 
     <!-- contient la section commande -->
     <section id="section_commande">
@@ -162,33 +246,51 @@
         Jadoo
       </p>
 
-      <article id="section_commande_first_article">
-        <img class="lien_livraison" src="imgs/logo_uberEats.png" />
-        <p>
-          <span class="section_commande_article_title">UberEats</span><br />
+      <div id="section_commande_articles">
+        <article id="section_commande_first_article">
+          <img
+            class="lien_livraison"
+            src="imgs/logo_uberEats.png"
+            alt="logo uberEats"
+          />
+          <p>
+            <span class="section_commande_article_title">UberEats</span><br />
 
-          Commandez tous vos plats depuis UberEats
-        </p>
-      </article>
+            Commandez tous vos plats depuis UberEats
+          </p>
+        </article>
 
-      <article>
-        <img class="lien_livraison" src="imgs/logo_jadoo_1.svg" />
-        <p>
-          <span class="section_commande_article_title">Jadoo.fr</span><br />
+        <article>
+          <img
+            class="lien_livraison"
+            src="imgs/logo_jadoo_1.svg"
+            alt="logo jadoo"
+          />
+          <p>
+            <span class="section_commande_article_title">Jadoo.fr</span><br />
 
-          Ou commandez en ligne sur le site officiel de Jadoo
-        </p>
-      </article>
+            Ou commandez en ligne sur le site officiel de Jadoo
+          </p>
+        </article>
 
-      <article>
-        <img class="lien_livraison" src="imgs/logo_transport.png" />
-        <p>
-          <span class="section_commande_article_title">Livraison ultra rapide</span><br />
+        <article>
+          <img
+            class="lien_livraison"
+            src="imgs/logo_transport.png"
+            alt="logo transport"
+          />
+          <p>
+            <span class="section_commande_article_title"
+              >Livraison ultra rapide</span
+            ><br />
 
-          Soyez livré en 20 minutes maximum
-        </p>
-      </article>
-      <button class="button_orange" href="#">Découvrir la carte</button>
+            Soyez livré en 20 minutes maximum
+          </p>
+        </article>
+      </div>
+      <button id="button_section_commande" class="button_orange" href="#">
+        Découvrir la carte
+      </button>
     </section>
 
     <!-- contient la section contact -->
@@ -200,18 +302,18 @@
         pour réserver au restaurant
       </p>
       <br />
-      <div id="form_contact">
+      <figure id="form_contact">
         <form>
           <p id="form_title">Formulaire de contact</p>
           <p>
             Remplissez le formulaire ci-dessous<br />
             pour nous contacter
           </p>
-          <div class="user_name">
+          <article class="user_name">
             <label>Nom</label>
             <input type="text" id="name" name="user_name" placeholder="Nom" />
-          </div>
-          <div class="user_name">
+          </article>
+          <article class="user_name" id="name_2">
             <label>Prénom</label>
             <input
               type="text"
@@ -219,7 +321,7 @@
               name="user_first_name"
               placeholder="Prénom"
             />
-          </div>
+          </article>
           <label>Adresse e-mail</label>
           <input
             type="email"
@@ -234,22 +336,33 @@
             name="user_text"
             placeholder="Votre message/demande de réservation"
           />
-          <div class="text_center">
-            <button class="button_bleu">
+          <article class="text_center">
+            <button id="button_form" class="button_bleu">
               <img src="imgs/bouton_formulaire_coche.svg" />&nbsp;&nbsp;Envoyer
             </button>
-          </div>
+          </article>
         </form>
-        <div id="form_image">
-          <img src="imgs/illustration_formulaire.jpg" />
-        </div>
-      </div>
+        <article id="form_image">
+          <img
+            src="imgs/illustration_formulaire.jpg"
+            alt="la photo d'un plat"
+          />
+        </article>
+      </figure>
     </section>
     <!-- contient le pied de la page -->
     <footer>
-      <section class="block_footer">
-        <img id="logo_foot_1" src="imgs/logo_jadoo_1.svg" />&nbsp;&nbsp;
-        <img id="logo_foot_2" src="imgs/logo_jadoo_2.svg" /><br />
+      <section class="block_footer" id="foot_jado">
+        <img
+          id="logo_foot_1"
+          src="imgs/logo_jadoo_1.svg"
+          alt="logo maki de jadoo"
+        />&nbsp;&nbsp;
+        <img
+          id="logo_foot_2"
+          src="imgs/logo_jadoo_2.svg"
+          alt="logo du nom jadoo"
+        /><br />
         <p id="logo_foot_text">
           Un voyage gastronomique entre le Japon et la France
         </p>
@@ -271,21 +384,25 @@
       </section>
 
       <section class="block_footer">
-        <img id="logo_uber_2" src="imgs/logo_uberEats_2.svg" />
+        <img
+          id="logo_uber_2"
+          src="imgs/logo_uberEats_2.svg"
+          alt="logo uberEats"
+        />
         <br />Téléchargez UberEats<br /><br />
 
         <button class="button_back" href="#">
           <img
-            id="logo_foot_1"
             class="image_center"
             src="imgs/logo_google_play.svg"
+            alt="logo google play"
           />&nbsp;&nbsp;GOOGLE PLAY
         </button>
         <button class="button_back" href="#">
           <img
-            id="logo_foot_2"
             class="image_center"
             src="imgs/logo_apple.svg"
+            alt="logo apple"
           />&nbsp;&nbsp;APPLE STORE
         </button>
       </section>
