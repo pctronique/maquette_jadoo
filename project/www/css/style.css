@@ -100,7 +100,7 @@ video {
 .video .button_video_play {
   background-color: white;
   display: none;
-  display: inline-block;
+  /*display: inline-block;*/
   border: none;
   position: absolute;
   width: 80px;
