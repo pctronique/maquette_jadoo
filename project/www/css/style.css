@@ -10,6 +10,8 @@ body {
   width: 100%;
 }
 
+/** forcer la validation de W3C pour 
+les balises des articles **/
 h6 {
   display: none;
 }
