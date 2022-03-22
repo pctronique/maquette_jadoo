@@ -9,7 +9,6 @@
   }
 }
 
-
 /************************************/
 /** version entre 1024px et 1207px **/
 /************************************/
@@ -115,7 +114,7 @@
 
   /*------------------------*/
   /** section presentation **/
-  #section_presentation article {
+  #section_presentation {
     padding-left: 20px;
   }
 
@@ -124,25 +123,12 @@
     font-size: 40px;
   }
 
-  /*----------------*/
-  /** section chef **/
-  #section_chef article,
-  #section_chef p {
-    background-size: cover;
-    padding-left: 40px;
-  }
-
-  #section_chef article,
-  #section_chef p {
+  #section_chef {
     padding-left: 20px;
   }
 
   #section_chef .section_message {
     width: 480px;
-  }
-
-  #section_chef video {
-    margin-left: 20px;
   }
 
   /*--------------------*/
@@ -248,20 +234,18 @@
   /*------------------------*/
   /** section presentation **/
   #section_presentation:before {
-    background: none
+    background: none;
   }
-  
+
   #section_presentation {
     background: url("../imgs/illustration_principale.jpg") no-repeat;
     background-size: cover;
+    padding: unset;
     padding-top: 50px;
     padding-bottom: 55px;
+    padding-left: 15px;
+    padding-right: 15px;
     text-align: center;
-  }
-
-  #section_presentation article {
-    margin: unset;
-    padding: unset;
   }
 
   /*----------------*/
@@ -408,7 +392,6 @@
   }
 
   .maki img {
-    display: flexbox;
     justify-items: center;
     float: left;
     min-width: 90px;
@@ -416,7 +399,6 @@
   }
 
   .maki p {
-    display: flexbox;
     justify-items: center;
     text-align: left;
     float: left;
@@ -444,7 +426,6 @@
   /** section chef **/
   #section_chef {
     background: none;
-    display: flexbox;
     margin: unset;
     padding: unset;
     width: 100%;

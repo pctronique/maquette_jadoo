@@ -1,6 +1,5 @@
-<?xml version="5.0" encoding="UTF-8" ?>
 <!DOCTYPE html>
-<html>
+<html lang="fr">
   <head>
     <title>Jadoo : un voyage culinaire gourmet et gourmand</title>
     <link rel="icon" href="favicon.ico" />
@@ -54,21 +53,22 @@
 
     <!-- contient la presentation -->
     <section id="section_presentation">
-      <article>
-        <h3>UN VOYAGE CULINAIRE GOURMET ET GOURMAND.</h3>
-        <h1 class="section_title">
-          Bienvenue<br />
-          au restaurant <span class="souligne-rouge">Jadoo</span>
-        </h1>
-        <p class="section_message">
-          Jadoo vous accueille dans son ambiance zen et épurée, idéale pour
-          découvrir ou redécouvrir la cuisine gastronomique du Chef Junichi
-          IIDA.
-        </p>
-        <button id="button_presentation" class="button_orange" href="#">
-          Découvrir la carte
-        </button>
-      </article>
+      <p id="presentation_rapide">UN VOYAGE CULINAIRE GOURMET ET GOURMAND.</p>
+      <h1 class="section_title">
+        Bienvenue<br />
+        au restaurant <span class="souligne-rouge">Jadoo</span>
+      </h1>
+      <p class="section_message">
+        Jadoo vous accueille dans son ambiance zen et épurée, idéale pour
+        découvrir ou redécouvrir la cuisine gastronomique du Chef Junichi IIDA.
+      </p>
+      <button
+        id="button_presentation"
+        class="button_orange"
+        onclick="window.location.href='#';"
+      >
+        Découvrir la carte
+      </button>
     </section>
 
     <section id="section_plat">
@@ -77,6 +77,7 @@
       <div id="plats">
         <figure class="plat_no_img_filet" id="plat_1">
           <article class="plat">
+            <h6>plat</h6>
             <img
               src="imgs/plat_1.png"
               alt="photo du plat des boulettes de poulet"
@@ -88,6 +89,7 @@
         </figure>
         <figure class="plat_no_img_filet" id="plat_2">
           <article class="plat">
+            <h6>plat</h6>
             <img
               src="imgs/plat_2.png"
               alt="photo du plat des nouilles japonaises"
@@ -97,6 +99,7 @@
         </figure>
         <figure class="plat_img_filet" id="plat_3">
           <article class="plat">
+            <h6>plat</h6>
             <img
               src="imgs/plat_3.png"
               alt="photo du plat d'échine de porc panée'"
@@ -114,6 +117,7 @@
             alt="décoration d'une animation d'un carré rose"
           />
           <article class="maki">
+            <h6>maki</h6>
             <img
               src="imgs/maki_1.png"
               alt="photo du plat maki de California Tobiko"
@@ -133,6 +137,7 @@
             alt="décoration d'une animation d'un carré rose"
           />
           <article class="maki">
+            <h6>maki</h6>
             <img
               src="imgs/maki_2.png"
               alt="photo du plat maki de California Rolls"
@@ -152,6 +157,7 @@
             alt="décoration d'une animation d'un carré rose"
           />
           <article class="maki">
+            <h6>maki</h6>
             <img src="imgs/maki_3.png" alt="photo du plat maki Ebi" />
             <p>
               <span class="maki_title">Ebi</span><br />
@@ -168,6 +174,7 @@
             alt="décoration d'une animation d'un carré rose"
           />
           <article class="maki">
+            <h6>maki</h6>
             <img src="imgs/maki_4.png" alt="photo du plat maki d'Ikura Rolls" />
             <p>
               <span class="maki_title">Ikura Rolls</span><br />
@@ -178,23 +185,21 @@
         </figure>
       </div>
       <br />
-      <button id="button_section_plat" class="button_orange" href="#">
+      <button
+        id="button_section_plat"
+        class="button_orange"
+        onclick="window.location.href='#';"
+      >
         Découvrir la carte
       </button>
     </section>
 
     <!-- contient la section chef -->
     <section id="section_chef">
-      <video
-        width="720"
-        height="405"
-        controls
-        poster="imgs/visu_video.jpg"
-        alt="video du chef"
-      >
+      <video width="720" height="405" controls poster="imgs/visu_video.jpg">
         <source src="#" type="video/mp4" />
       </video>
-      <article class="video">
+      <div class="video">
         <img
           class="img_video"
           src="imgs/visu_video.jpg"
@@ -207,11 +212,11 @@
             alt="image du bouton de lecture de la vidéo"
           />
         </a>
-      </article>
-      <p class="section_title">
+      </div>
+      <h3 class="section_title">
         <span class="souligne-rouge">Un voyage</span> gastronomique entre le
         Japon et la France...
-      </p>
+      </h3>
       <p class="section_message">
         Passé par des maisons étoilées en France, le cuisinier japonais s'est
         forgé une solide expérience dans l'Hexagone : aujourd'hui franc-comtois
@@ -226,7 +231,7 @@
       src="imgs/illustration_chef.jpg"
       alt="photo d'un chef de cuisine"
     />
-    <section id="section_images">
+    <div id="section_images">
       <img
         src="imgs/wrapper_illustration_1.jpg"
         alt="plat avec des baguettes chinoises"
@@ -235,19 +240,20 @@
         src="imgs/wrapper_illustration_2.jpg"
         alt="illustration d'une pièce à manger chinoise"
       />
-    </section>
+    </div>
 
     <!-- contient la section commande -->
     <section id="section_commande">
       <p class="section_commande_text_rapide">RAPIDE ET PRATIQUE</p>
       <br />
-      <p class="section_commande_title">
+      <h4 class="section_commande_title">
         <span class="section_commande_text_orange">Commandez</span> sur le site
         Jadoo
-      </p>
+      </h4>
 
       <div id="section_commande_articles">
         <article id="section_commande_first_article">
+          <h6>livraison</h6>
           <img
             class="lien_livraison"
             src="imgs/logo_uberEats.png"
@@ -261,6 +267,7 @@
         </article>
 
         <article>
+          <h6>livraison</h6>
           <img
             class="lien_livraison"
             src="imgs/logo_jadoo_1.svg"
@@ -274,6 +281,7 @@
         </article>
 
         <article>
+          <h6>livraison</h6>
           <img
             class="lien_livraison"
             src="imgs/logo_transport.png"
@@ -288,7 +296,11 @@
           </p>
         </article>
       </div>
-      <button id="button_section_commande" class="button_orange" href="#">
+      <button
+        id="button_section_commande"
+        class="button_orange"
+        onclick="window.location.href='#';"
+      >
         Découvrir la carte
       </button>
     </section>
@@ -297,10 +309,10 @@
     <section id="section_contact">
       <p id="section_contact_info">PRENDRE RENDEZ-VOUS</p>
       <br />
-      <p id="section_contact_title">
+      <h5 id="section_contact_title">
         Contactez-nous <br />
         pour réserver au restaurant
-      </p>
+      </h5>
       <br />
       <figure id="form_contact">
         <form>
@@ -309,11 +321,11 @@
             Remplissez le formulaire ci-dessous<br />
             pour nous contacter
           </p>
-          <article class="user_name">
+          <div class="user_name">
             <label>Nom</label>
             <input type="text" id="name" name="user_name" placeholder="Nom" />
-          </article>
-          <article class="user_name" id="name_2">
+          </div>
+          <div class="user_name" id="name_2">
             <label>Prénom</label>
             <input
               type="text"
@@ -321,7 +333,7 @@
               name="user_first_name"
               placeholder="Prénom"
             />
-          </article>
+          </div>
           <label>Adresse e-mail</label>
           <input
             type="email"
@@ -336,24 +348,31 @@
             name="user_text"
             placeholder="Votre message/demande de réservation"
           />
-          <article class="text_center">
-            <button id="button_form" class="button_bleu">
-              <img src="imgs/bouton_formulaire_coche.svg" />&nbsp;&nbsp;Envoyer
+          <div class="text_center">
+            <button
+              id="button_form"
+              class="button_bleu"
+              onclick="window.location.href='#';"
+            >
+              <img
+                src="imgs/bouton_formulaire_coche.svg"
+                alt="image pour cocher le formulaire"
+              />&nbsp;&nbsp;Envoyer
             </button>
-          </article>
+          </div>
         </form>
-        <article id="form_image">
+        <div id="form_image">
           <img
             src="imgs/illustration_formulaire.jpg"
             alt="la photo d'un plat"
           />
-        </article>
+        </div>
       </figure>
     </section>
     <!-- contient le pied de la page -->
     <footer>
       <div id="footer_contenu">
-        <section class="block_footer" id="foot_jado">
+        <div class="block_footer" id="foot_jado">
           <img
             id="logo_foot_1"
             src="imgs/logo_jadoo_1.svg"
@@ -367,9 +386,9 @@
           <p id="logo_foot_text">
             Un voyage gastronomique entre le Japon et la France
           </p>
-        </section>
+        </div>
 
-        <section class="block_footer foot_center">
+        <div class="block_footer foot_center">
           <ul>
             <li class="title">Restaurant</li>
             <li><a href="#">Nouveautés</a></li>
@@ -382,9 +401,9 @@
             <li><a href="#">Prendre</a></li>
             <li><a href="#">RDV</a></li>
           </ul>
-        </section>
+        </div>
 
-        <section class="block_footer">
+        <div class="block_footer">
           <img
             id="logo_uber_2"
             src="imgs/logo_uberEats_2.svg"
@@ -392,21 +411,21 @@
           />
           <br />Téléchargez UberEats<br /><br />
 
-          <button class="button_back" href="#">
+          <button class="button_back" onclick="window.location.href='#';">
             <img
               class="image_center"
               src="imgs/logo_google_play.svg"
               alt="logo google play"
             />&nbsp;&nbsp;GOOGLE PLAY
           </button>
-          <button class="button_back" href="#">
+          <button class="button_back" onclick="window.location.href='#';">
             <img
               class="image_center"
               src="imgs/logo_apple.svg"
               alt="logo apple"
             />&nbsp;&nbsp;APPLE STORE
           </button>
-        </section>
+        </div>
       </div>
       <p id="droits_reserves">Tous droits réservés @jadoo.com</p>
     </footer>
