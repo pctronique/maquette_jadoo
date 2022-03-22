@@ -10,6 +10,10 @@ body {
   width: 100%;
 }
 
+h6 {
+  display: none;
+}
+
 /***********************/
 /** css all component **/
 /***********************/
@@ -99,7 +103,6 @@ video {
 .video .button_video_play {
   background-color: white;
   display: none;
-  /*display: inline-block;*/
   border: none;
   position: absolute;
   width: 80px;
@@ -163,7 +166,6 @@ video {
 }
 
 #menu_all {
-  display: flexbox;
   float: right;
   padding-right: 67px;
   margin-top: 3px;
@@ -228,7 +230,7 @@ header a:hover {
 /*------------------------*/
 /** section presentation **/
 #section_presentation:before {
-  content: "";  
+  content: "";
   position: absolute;
   background: url("../imgs/illustration_principale.jpg") no-repeat;
   background-size: cover;
@@ -241,7 +243,6 @@ header a:hover {
 }
 
 #section_presentation {
-  display: flexbox;
   position: relative;
   overflow: hidden;
   box-sizing: border-box;
@@ -249,15 +250,12 @@ header a:hover {
   padding: 25px;
   padding-top: 100px;
   padding-bottom: 100px;
+  padding-left: 113px;
   color: #8a8a94;
   font-family: "poppins-regular";
 }
 
-#section_presentation article {
-  padding-left: 113px;
-}
-
-h3 {
+#presentation_rapide {
   padding-top: 75px;
   color: #df6951;
   font-family: "poppins-bold";
@@ -474,7 +472,7 @@ img.lien_livraison {
 /*----------------*/
 /** section chef **/
 #section_chef:before {
-  content: "";  
+  content: "";
   position: absolute;
   background: url("../imgs/illustration_chef.jpg");
   background-size: cover;
@@ -492,22 +490,17 @@ img.lien_livraison {
   margin-top: -10px;
   padding-top: 50px;
   padding-bottom: 440px;
+  padding-left: 150px;
   color: white;
   font-family: "poppins-regular";
 }
 
 #section_chef video {
   margin-top: 40px;
-  margin-left: 150px;
 }
 
 #section_chef .video {
   margin-top: 40px;
-}
-
-#section_chef article,
-#section_chef p {
-  padding-left: 150px;
 }
 
 #section_chef .section_title {
@@ -530,10 +523,6 @@ img.lien_livraison {
   overflow: hidden;
 }
 
-#section_image img {
-  display: flexbox;
-}
-
 #img_chef {
   display: none;
 }
@@ -541,7 +530,7 @@ img.lien_livraison {
 /*--------------------*/
 /** section commande **/
 #section_commande:before {
-  content: "";  
+  content: "";
   position: absolute;
   background: url("../imgs/illustration_commander.jpg") no-repeat;
   background-size: cover;
@@ -553,7 +542,6 @@ img.lien_livraison {
 }
 
 #section_commande {
-  display: flexbox;
   position: relative;
   overflow: hidden;
   width: 100%;
@@ -670,7 +658,6 @@ img.lien_livraison {
 }
 
 #form_contact form {
-  display: flexbox;
   justify-items: center;
   padding-left: 25px;
   width: 45%;
@@ -809,7 +796,6 @@ footer p {
 }
 
 .block_footer {
-  display: flexbox;
   position: relative;
   vertical-align: top;
   max-width: 300px;
@@ -838,10 +824,6 @@ footer ul {
   padding-left: 0;
   margin-top: 0px;
   margin-right: 50px;
-}
-
-footer ul #footer_title_right {
-  margin-right: opx;
 }
 
 footer ul li {
