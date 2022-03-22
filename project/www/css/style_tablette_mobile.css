@@ -247,8 +247,13 @@
 
   /*------------------------*/
   /** section presentation **/
+  #section_presentation:before {
+    background: none
+  }
+  
   #section_presentation {
-    overflow: hidden;
+    background: url("../imgs/illustration_principale.jpg") no-repeat;
+    background-size: cover;
     padding-top: 50px;
     padding-bottom: 55px;
     text-align: center;
@@ -262,10 +267,11 @@
   /*----------------*/
   /** section plat **/
   #section_plat {
-    /*background-image: none;*/
+    background-image: none;
     overflow: hidden;
     padding: unset;
     text-align: center;
+    background-position-y: -5px;
     background-position-x: -400px;
   }
 
@@ -468,6 +474,7 @@
     height: 100%;
   }
 
+  /*-----------------*/
   /** section image **/
   #section_images {
     display: flex;
@@ -495,8 +502,11 @@
 
   /*--------------------*/
   /** section commande **/
-  #section_commande {
+  #section_commande:before {
     background: none;
+  }
+
+  #section_commande {
     overflow: hidden;
     margin: unset;
     padding: 20px;
