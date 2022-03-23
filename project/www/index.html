@@ -35,16 +35,16 @@
         <nav>
           <ul id="head_right">
             <li>
-              <a href="#">Les nouveautés</a>
+              <a href="#section_plat">Les nouveautés</a>
             </li>
             <li>
-              <a href="#">Découvrir</a>
+              <a href="#section_chef">Découvrir</a>
             </li>
             <li>
-              <a href="#">Commander</a>
+              <a href="#section_commande">Commander</a>
             </li>
             <li>
-              <a href="#">Contactez-nous</a>
+              <a href="#section_contact">Contactez-nous</a>
             </li>
           </ul>
         </nav>
@@ -62,13 +62,15 @@
         Jadoo vous accueille dans son ambiance zen et épurée, idéale pour
         découvrir ou redécouvrir la cuisine gastronomique du Chef Junichi IIDA.
       </p>
-      <button
-        id="button_presentation"
-        class="button_orange"
-        onclick="window.location.href='#';"
-      >
-        Découvrir la carte
-      </button>
+      <a class="button_text_decoration" href="#">
+        <div
+          id="button_presentation"
+          class="button_orange"
+          onclick="window.location.href='#';"
+        >
+          Découvrir la carte
+        </div>
+      </a>
     </section>
 
     <section id="section_plat">
@@ -185,13 +187,11 @@
         </figure>
       </div>
       <br />
-      <button
-        id="button_section_plat"
-        class="button_orange"
-        onclick="window.location.href='#';"
-      >
-        Découvrir la carte
-      </button>
+      <a class="button_text_decoration" href="#">
+        <div id="button_section_plat" class="button_orange">
+          Découvrir la carte
+        </div>
+      </a>
     </section>
 
     <!-- contient la section chef -->
@@ -296,13 +296,11 @@
           </p>
         </article>
       </div>
-      <button
-        id="button_section_commande"
-        class="button_orange"
-        onclick="window.location.href='#';"
-      >
-        Découvrir la carte
-      </button>
+      <a class="button_text_decoration" href="#">
+        <div id="button_section_commande" class="button_orange">
+          Découvrir la carte
+        </div>
+      </a>
     </section>
 
     <!-- contient la section contact -->
@@ -349,18 +347,21 @@
             placeholder="Votre message/demande de réservation"
           />
           <div class="text_center">
-            <button
-              id="button_form"
-              class="button_bleu"
-              onclick="window.location.href='#';"
-            >
-              <img
-                src="imgs/bouton_formulaire_coche.svg"
-                alt="image pour cocher le formulaire"
-              />&nbsp;&nbsp;Envoyer
-            </button>
+            <a class="button_text_decoration" href="#">
+              <div
+                id="button_form"
+                class="button_bleu"
+                onclick="window.location.href='#';"
+              >
+                <img
+                  src="imgs/bouton_formulaire_coche.svg"
+                  alt="image pour cocher le formulaire"
+                />&nbsp;&nbsp;Envoyer
+              </div>
+            </a>
           </div>
         </form>
+
         <div id="form_image">
           <img
             src="imgs/illustration_formulaire.jpg"
@@ -411,20 +412,25 @@
           />
           <br />Téléchargez UberEats<br /><br />
 
-          <button class="button_back" onclick="window.location.href='#';">
-            <img
-              class="image_center"
-              src="imgs/logo_google_play.svg"
-              alt="logo google play"
-            />&nbsp;&nbsp;GOOGLE PLAY
-          </button>
-          <button class="button_back" onclick="window.location.href='#';">
-            <img
-              class="image_center"
-              src="imgs/logo_apple.svg"
-              alt="logo apple"
-            />&nbsp;&nbsp;APPLE STORE
-          </button>
+          <a class="button_text_decoration" href="#">
+            <div class="button_back">
+              <img
+                class="image_center"
+                src="imgs/logo_google_play.svg"
+                alt="logo google play"
+              />&nbsp;&nbsp;GOOGLE PLAY
+            </div>
+          </a>
+          &nbsp;
+          <a class="button_text_decoration" href="#">
+            <div class="button_back">
+              <img
+                class="image_center"
+                src="imgs/logo_apple.svg"
+                alt="logo apple"
+              />&nbsp;&nbsp;APPLE STORE
+            </div>
+          </a>
         </div>
       </div>
       <p id="droits_reserves">Tous droits réservés @jadoo.com</p>
