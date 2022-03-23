@@ -23,6 +23,7 @@ h6 {
 .button_orange,
 .button_orange:hover,
 .button_orange:link {
+  display: inline-block;
   background-color: #f1a501;
   border: none;
   padding: 15px;
@@ -39,7 +40,9 @@ h6 {
 }
 
 .button_back,
-.button_back:hover.button_back:link {
+.button_back:hover,
+.button_back:link {
+  display: inline-block;
   background-color: black;
   border: none;
   padding: 10px;
@@ -55,9 +58,15 @@ h6 {
   color: #929292;
 }
 
+.button_text_decoration {
+  display: inline-block;
+  text-decoration: none;
+}
+
 .button_bleu,
 .button_bleu:hover,
 .button_bleu:link {
+  display: inline-block;
   background-color: #007aff;
   border: none;
   padding: 15px;
