@@ -545,7 +545,7 @@ img.lien_livraison {
   position: absolute;
   background: url("../imgs/illustration_commander.jpg") no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: left;
   height: 100%;
   width: 100%;
   transform: scale(1.3);
