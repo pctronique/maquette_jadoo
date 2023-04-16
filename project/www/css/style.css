@@ -8,6 +8,7 @@
 body {
   margin: auto;
   width: 100%;
+  min-width: 320px;
 }
 
 /** forcer la validation de W3C pour 
